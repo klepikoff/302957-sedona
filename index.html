@@ -8,168 +8,168 @@
     <header class="main-header">
       <nav class="main-navigator">
         <a class="main-header-logo" href="index.html">
-          <img src="img-index/logo.svg" width="67" height="56" alt="Логотип города Седона">
+          <img src="img/logo.png" width="67" height="56" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="selected"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Welcome to Sedona</h1>
       <section class="container-top">
-        <h2 class="black-title">
+        <!--<img class="top-image" src="img/background_photo.jpg" width="1200" height="508" alt="Аризона"> не забыть вставить фоном-->
+        <h2 class="title">
           Седона - небольшой городок в Аризоне,<br>
           Заслуживающий большего
         </h2>
-        <a href="index.html"><img class="container-top-image" src="img/photo-1.img" width="1200" height="508" alt="Аризона"></a>
-        <span class="container-top-cause">
+        <span>
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
         </span>
       </section>
       <h2 class="visually-hidden">Преимущества Седоны</h2>
-      <section class="advantage-1 advantage-text">
-        <h3 class="advantage-1-title white-title">Настоящий городок</h3>
-        <span class="advantage-1-number">№1</span>
-        <p class="advantage-1-desc">
-          Седона-не аттракцион для туристов,<br>
-          там течет своя жизнь
-        </p>
-      </section>
-      <section  class="advantage-image">
-        <h3 class="visually-hidden">Уютный городок</h3>
-        <img height="257" width="800" src="img/photo-2.img" alt="Уютный городок">
-      </section>
+      <div class="featrures">
+        <section class="featrures-text">
+          <h3 class="title white-title">Настоящий городок</h3>
+          <span>№1</span>
+          <p>
+            Седона-не аттракцион для туристов,<br>
+            там течет своя жизнь
+          </p>
+        </section>
+        <div class="featrures-image">
+          <img height="257" width="800" src="img/photo-1.jpg" alt="Уютный городок">
+        </div>
+      </div>
       <section class="services">
           <h2 class="visually-hidden">Услуги для туристов</h2>
           <ul class="services-items">
             <li class="services-item">
-              <h3 class="services-item-title black-title">Жилье</h3>
-              <p class="services-item-desc">
+              <img src="img/icon-1.svg" alt="Жилье" height="75" width="72">
+              <h3 class="title">Жилье</h3>
+              <p>
                 Рекомендуем пожить в настоящем<br>
                 мотеле, все как в кино!
               </p>
             </li>
             <li class="services-item">
-              <h3 class="services-item-title black-title">Еда</h3>
-              <p class="services-item-desc">
+              <img src="img/icon-2.svg" alt="Еда" height="75" width="70">
+              <h3 class="title">Еда</h3>
+              <p>
                 Всегда заказывайте фирменный бургер,<br>
                 вы не разочаруетесь!
               </p>
             </li>
             <li class="services-item">
-              <h3 class="services-item-title black-title">Сувениры</h3>
-              <p class="services-item-desc">
+              <img src="img/icon-3.svg" alt="Сувениры" height="76" width="64">
+              <h3 class="title">Сувениры</h3>
+              <p>
                 Не только китайского, но и местного<br>
                 производста!
               </p>
             </li>
           </ul>
         </section>
-        <section class="advantage-2 advantage-text">
-          <h3 class="advantage-2-title white-title">Там есть мост дьявола</h3>
-          <span class="advantage-2-number">№2</span>
-          <p class="advantage-2-desc">
-            Да, по нему можно пройтись! Если конечно<br>
-            вы осмелитесь
-          </p>
-        </section>
-        <section  class="advantage-image">
-          <h3 class="visually-hidden">Мост дьявола</h3>
-          <img height="257" width="800" src="img/photo-2.img" alt="Мост дьявола">
-        </section>
-        <section class="advantages">
-            <ul class="advantages-items">
-              <li class="advantages-item">
-                <h3 class="advantages-item-title black-title">Небольшая площадь</h3>
-                <span class="advantages-number">№3</span>
-                <p class="advantages-item-desc">
+        <div class="featrures">
+          <section class="featrures-text">
+            <h3 class="title white-title">Там есть мост дьявола</h3>
+            <span>№2</span>
+            <p>
+              Да, по нему можно пройтись! Если конечно<br>
+              вы осмелитесь
+            </p>
+          </section>
+          <div class="featrures-image">
+            <img height="257" width="800" src="img/photo-2.jpg" alt="Мост дьявола">
+          </div>
+        </div>
+        <section class="featrures">
+            <ul class="featrures-items">
+              <li class="featrures-item">
+                <h3 class="title">Небольшая площадь</h3>
+                <span>№3</span>
+                <p>
                   Все достопримечательности<br>
                   находятся очень близко
                 </p>
               </li>
-              <li class="advantages-item">
-                <h3 class="advantages-item-title black-title">Красивая дорога</h3>
-                <span class="advantages-number">№4</span>
-                <p class="advantages-item-desc">
+              <li class="featrures-item">
+                <h3 class="title">Красивая дорога</h3>
+                <span>№4</span>
+                <p>
                   Ехать в Седону из Лас-Вегаса совсем<br>
                   не скучно!
                 </p>
               </li>
-              <li class="advantages-item">
-                <h3 class="advantages-item-title black-title">Мало туристов</h3>
-                <span class="advantages-number">№5</span>
-                <p class="advantages-item-desc">
+              <li class="featrures-item">
+                <h3 class="title">Мало туристов</h3>
+                <span>№5</span>
+                <p>
                   Большинство едет в Гранд-каньон и <br>
                   толпится там
                 </p>
               </li>
             </ul>
           </section>
-          <section class="booking-preview">
-            <h2 class="booking-priview-title">Заинтересовались?</h2>
-            <p class="booking-preview-desc">
+          <section class="booking">
+            <h2 class="title white-title">Заинтересовались?</h2>
+            <p>
                 Укажите предполагаемые даты поездки<br>
                 и мы покажем Вам лучшие предложения гостиниц в Седоне
             </p>
-            <img class="booking-preview-map" alt="Карта Аризоны" height="474" width="1200" src="img/photo-map.jpg">
-          </section>
-          <section class="booking">
-            <h2 class="visually-hidden">Форма заказа гостиницы</h2>
-            <section class="booking-title-box">
+            <section class="booking-form">
               <h3 class="booking-title">Поиск гостиницы в Седоне</h3>
-            </section>
-            <section class="popup">
-              <h3 class="visually-hidden">Выбор даты заезда</h3>
-              <ul class="popup-items">
-                <li>
-                  <span class="popup-date">Дата заезда:</span>
-                  <input type="text" id="date-begin" name="date-begin" value="24 апреля 2017">
-                  <a class="popup-calendar">
-                    <img src="img/calendar.png" width="22" height="22" alt="Календарь">
-                  </a>
-                </li>
-                <li>
-                  <span class="popup-date">Дата выезда:</span>
-                  <input type="text" id="date-end" name="date-end" value="4 июля 2017">
-                  <a class="popup-calendar">
-                    <img src="img/calendar.png" width="22" height="22" alt="Календарь">
-                  </a>
-                <li>
-                  <span class="popup-adult">Взрослые</span>
-                    <img src="img/minus.png" alt="-" height="11" width="11">
+                <form method="get" action="/echo">
+                  <ul>
+                    <li>
+                      <label for="arrival">Дата заезда</label>
+                      <input id="arrival" type="date" name="arrival">
+                      <a href="#" class="popup-calendar">
+                        <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
+                      </a>
+                    </li>
+                    <li>
+                      <label for="departure">Дата выезда</label>
+                      <input id="departure" type="date" name="departure">
+                      <a href="#" class="popup-calendar">
+                        <img src="img/calendar.svg" width="22" height="22" alt="Календарь">
+                      </a>
+                    </li>
+                    <li>
+                      <span class="popup-adult">Взрослые</span>
+                      <img src="img/minus.png" alt="-" height="3" width="12">
                       <b>2</b>
-                    <img src="img/plus.png" alt="+" height="11" width="11">
-                </li>
-                <li>
-                  <span class="popup-children">Дети</span>
-                    <img src="img/minus.png" alt="-" height="11" width="11">
+                      <img src="img/plus.png" alt="+" height="11" width="11">
+                    </li>
+                    <li>
+                      <span class="popup-children">Дети</span>
+                      <img src="img/minus.png" alt="-" height="3" width="12">
                       <b>0</b>
-                    <img src="img/plus.png" alt="+" height="11" width="11">
-                </li>
-              </ul>
-              <a class="popup-button" href="#">Найти</a>
-            </section>
+                      <img src="img/plus.png" alt="+" height="11" width="11">
+                    </li>
+                  </ul>
+                  <button>Найти</button>
+                </form>
+              </section>
           </section>
+          <img class="map" alt="Карта Аризоны" height="474" width="1200" src="img/map.jpg">
     </main>
 
     <footer class="main-footer">
         <p class="footer-tag">
           #visitsedona
         </p>
-        <div class="footer-social">
-          <ul>
-            <li class="social button">Вконтакте</li>
-            <li class="social button">Facebook</li>
-            <li class="social button">Youtube</li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#" class="social button">Вконтакте</a></li>
+          <li><a href="#" class="social button">Facebook</a></li>
+          <li><a href="#" class="social button">Youtube</a></li>
+        </ul>
         <p class="footer-copyright">
           <b>Website by</b><a href="https://htmlacademy.ru">HTML Academy</a>
-        <p>
+        </p>
     </footer>
   </body>
 </html>
