@@ -6,17 +6,19 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-h2 {font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size:30px;
-  line-height:36px;
-  color:#000000;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
 h3,
 .title {font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size:21px;
   line-height:21px;
+  color:#000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size:30px;
+  line-height:36px;
   color:#000000;
   font-weight: 700;
   text-transform: uppercase;
