@@ -5,7 +5,32 @@ body {
   color:#333333;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  background-color:#ffffff;
+  list-style: none;
+}
 
+a{
+  text-decoration:none;
+}
+
+.main-navigation {
+  display: flex;
+  color:#333333;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.filters section {
+  background-image:url("img/background.jpg");
+  background-repeat:no-repeat;
+}
+
+.site-navigation a {
+  color:#333333;
 }
 
 h3,
