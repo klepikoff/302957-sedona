@@ -9,13 +9,14 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigator">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="67" height="56" alt="Логотип города Седона">
-        </a>
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
+          <li><a class="main-header-logo" href="index.html">
+            <img src="img/logo.png" width="140" height="70" alt="Логотип города Седона">
+          </a>
+          </li>
           <li><a href="state-map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -59,17 +60,19 @@
                     </li>
                   </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-range">
               <legend>Стоимость в сутки (Р):</legend>
-                <div class="slider transparent">
-                    От 0
+                <div class="price-controls">
+                    <label class="min-price">От <input type="text" value="0" name="min-price" ></label>
+                    <label class="max-price">До <input type="text" value="3000" name="max-price" ></label>
                 </div>
-                <div class="slider transparent">
-                    До 3000
-                </div>
-                <input type="range">
-                <div>
-                  <button class="transparent">Показать</button>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toogle range-toogle-min"></div>
+                  <div class="range-toogle range-toogle-max"></div>
+                  <button class="transparents">Показать</button>
                 </div>
             </fieldset>
           </form>
@@ -173,12 +176,24 @@
             #visitsedona
           </p>
           <ul>
-            <li><a href="#" class="social button">Вконтакте</a></li>
-            <li><a href="#" class="social button">Facebook</a></li>
-            <li><a href="#" class="social button">Youtube</a></li>
+            <li class="social button">
+              <a href="#">
+                <img src="img/twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="social button">
+              <a href="#">
+                <img src="img/fb-icon.svg" alt="Facebook">
+              </a>
+            </li>
+            <li class="social button">
+              <a href="#">
+                <img src="img/youtube.svg" alt="YouTube">
+              </a>
+            </li>
           </ul>
           <p class="footer-copyright">
-            <b>Website by</b><a href="https://htmlacademy.ru">HTML Academy</a>
+            <b>Website by</b><a href="https://htmlacademy.ru"><img alt="HTML Academy" src="img/logo-htmlacademy.svg"></a>
           </p>
       </footer>
   </body>
