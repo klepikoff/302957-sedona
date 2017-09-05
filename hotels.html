@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
@@ -77,9 +77,9 @@
             </fieldset>
           </form>
       </section>
-      <section>
-        <h2 class="visually-hidden">Результаты поиска</h2>
-          <p class="results">Найдено: 3</p>
+      <section class="results">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <p class="results-find">Найдено: 3</p>
           <p class="results-sort">Сортировка</p>
           <ul class="results-type">
               <li class="result-type current"><a href="hotels.html">По цене</a></li>
@@ -104,14 +104,16 @@
                   </p>
                   <p>
                     <a href="#" class="button-more">Подробнее</a>
-                    <button class="button-booking">Забронировать</button>
+                    <button class="button-order">Забронировать</button>
                   </p>
               </div>
               <div class="hotel-rate">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
+                <div>
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                </div>
                 <p>
                   Рейтинг:8,5
                 </p>
@@ -131,13 +133,15 @@
                   </p>
                   <p>
                     <a href="#" class="button-more">Подробнее</a>
-                    <button class="button-booking">Забронировать</button>
+                    <button class="button-order">Забронировать</button>
                   </p>
               </div>
               <div class="hotel-rate">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
+                <div>
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                </div>
                 <p>
                   Рейтинг:8,9
                 </p>
@@ -150,19 +154,21 @@
                 </a>
               </div>
               <div class="hotel-desc">
-                <h3>Villas at poco diablo</h3>
+                  <h3>Villas at poco diablo</h3>
                   <p>
                     <span>Апартаменты</span>
                     <span>От 2000 Р.</span>
                   </p>
                   <p>
                     <a href="#" class="button-more">Подробнее</a>
-                    <button class="button-booking">Забронировать</button>
+                    <button class="button-order">Забронировать</button>
                   </p>
               </div>
               <div class="hotel-rate">
-                <img alt="star" height="17" width="17" src="img/star.svg">
-                <img alt="star" height="17" width="17" src="img/star.svg">
+                <div>
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                  <img alt="star" height="17" width="17" src="img/star.svg">
+                </div>
                 <p>
                   Рейтинг:9,2
                 </p>
@@ -171,7 +177,7 @@
           </ul>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer footer-transparency">
           <p class="footer-tag">
             #visitsedona
           </p>
@@ -192,9 +198,10 @@
               </a>
             </li>
           </ul>
-          <p class="footer-copyright">
-            <b>Website by</b><a href="https://htmlacademy.ru"><img alt="HTML Academy" src="img/logo-htmlacademy.svg"></a>
-          </p>
+          <div class="footer-copyright">
+            <b>Website by  </b>
+            <a href="https://htmlacademy.ru"><img alt="HTML Academy" src="img/logo-htmlacademy.svg" height="41" width="115"></a>
+          </div>
       </footer>
   </body>
 </html>

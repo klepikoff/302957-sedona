@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size:14px;
   line-height:26px;
   color:#333333;
@@ -10,9 +10,15 @@ body {
   padding: 0;
   background-color:#ffffff;
   list-style: none;
+  display:flex;
+  flex-direction: column;
+  border:solid 1px black;
+
 }
 h3,
-.title {
+.title,
+.footer-tag,
+.results-find{
   font-size:21px;
   line-height:100%;
   color:#000000;
@@ -29,6 +35,10 @@ h2 {
 a{
   text-decoration:none;
 }
+.site-navigation{
+  font-weight: 700;
+}
+
 
 /*li {
   border: solid 1px black;
@@ -61,46 +71,6 @@ a{
   transform: translateX(-50%);
 }
 
-
-/*фильтры*/
-.filters section {
-  background-image:url("img/background.jpg");
-  background-repeat:no-repeat;
-}
-.features-items,
-.services-items{
-  list-style:none;
-}
-.filters{
-  font-size: 14px;
-  line-height:1.3125;
-  color:#000000;
-  font-weight: 400;
-  text-transform: uppercase;
-  }
-.filters legend{
-  font-weight: 700;
-}
-.price-controls label{
-  display:inline-block;
-  vertical-align:top;
-  cursor: pointer;
-  line-height:38px;
-}
-.price-controls .min-price,
-.price-controls .max-price{
-  width: 90px;
-  padding-left:65px;
-}
-
-.price-controls input{
-  width:50px;
-  margin:0;
-}
-.filter-range {
-  width: 330px;
-}
-
 /* main-container основной страницы*/
 .container-top {
     display:flex;
@@ -108,10 +78,12 @@ a{
     align-items:center;
     height:724px;
 }
+.features-image{
+  height: 256px;
 
+}
 .features {
   display: flex;
-
 }
 .features-text {
   background-color: #81b3d2;
@@ -140,6 +112,8 @@ a{
 .white-title{
   color: white;
 }
+
+
 .services-items {
   display: flex;
   justify-content:space-between;
@@ -160,16 +134,241 @@ a{
   flex-direction: column;
   align-items: center;
 }
-.booking-title{
+.booking-button{
   height:86px;
   width:568px;
   background-color:#766357;
+  font-size:21px;
+  line-height:26px;
+  color:#ffffff;
+  font-weight:700;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
   border:none;
-  color:wgite;
+
+}
+.popup-button {
+  height:58px;
+  width:458px;
+  background-color:#81b3d2;
+  font-size:21px;
+  line-height:26px;
+  color:#ffffff;
+  font-weight:700;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  border:none;
+}
+.map{
+  margin-bottom:-120px;
+  z-index:1;
+}
+/*filters*/
+.filters {
+  position:relative;
+  background:url(img/background.jpg);
+  border: solid 2px green;
+  height:217px;
+}
+.filters form{
+  display:flex;
+  justify-content: center;
 }
 
+.filter-range {
+  width:318px;
+  height:156px;
+}
+.transparents {
+  border:solid 2px #f5f5f5;
+  height:36px;
+  width: 137px;
+  margin-bottom: 20px;
+}
+.price-controls{
+  border: solid 2px #f5f5f5;
+  height:36px;
+  width:318px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor:pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+.price-controls::after{
+  content:"";
+  position:absolute;
+  width:2px;
+  height:22px;
+  background:#f5f5f5;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.min-price,
+.max-price{
+  width:90px;
+  padding-left:60px;
+}
+.price-controls input {
+  width: 50px;
+  margin:0;
+  background:none;
+  border:none;
+  outline:none;
+  color:inherit;
+  font:inherit;
+}
+.range-controls{
+  position: relative;
+  margin-bottom:32px;
+}
+.range-controls .slace{
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  height:2px;
+  width:80%;
+  background:#f5f5f5;
+}
+
+/*results*/
+.results {
+  border: 1px green solid;
+  height: 86px;
+  display: flex;
+  align-items: center;
+}
+.results-find{
+  padding-left:72px;
+}
+.results-sort{
+  padding-left: 49px;
+}
+.results-type{
+  display: flex;
+  list-style: none;
+}
+.results-type li{
+  padding-right: 34px;
+}
+ a.current.result-type{
+  color:#81b3d2;
+}
+/*catalog*/
+.catalog-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px green solid;
+  margin:0;
+  padding-left:0;
+}
+.catalog-item {
+  display:flex;
+  border-bottom: #e5e5e5 1px solid;
+  align-items: center;
+  height:150px;
+}
+.hotel-photo {
+  padding-left:72px;
+  padding-right: 30px;
+  height:90px;
+
+}
+.hotel-desc{
+    width:257px;
+    height:90px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+.hotel-desc h3{
+  margin:0;
+}
+.hotel-desc h3:hover{
+  color:#81b3d2;
+}
+.hotel-desc h3:active{
+  color:rgba(0, 0, 0, 0.3);
+}
+.hotel-rate {
+  position: absolute;
+  right:73px;
+  text-align: right;
+  display: flex;
+  height:90px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotel-rate p{
+  background:#f2f2f2;
+  height:27px;
+  width:110px;
+  color:#666666;
+  margin:0;
+  display: flex;
+  justify-content: center;
+}
+.hotel-desc p{
+  display: flex;
+  margin:0;
+}
+.hotel-desc p span{
+  display:flex;
+  width:110px;
+  margin-right:6px;
+}
+.button-more {
+  display: flex;
+  height:27px;
+  width:110px;
+  margin-right:6px;
+  background:#81b3d2;
+  color:#ffffff;
+  font:inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 0;
+  padding:0;
+  margin-right:6px;
+  justify-content: center;
+}
+.button-more:hover {
+  background:#669ec0;
+}
+.button-more:active {
+  background:#5496bd;
+  color:rgba(255, 255, 255, 0.3);
+}
+.button-order {
+  height:27px;
+  width:142px;
+  background:#766357;
+  color:#ffffff;
+  display:flex;
+  justify-content: center;
+  font:inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  padding:0;
+  margin: 0;
+}
+.button-order:hover {
+  background:#604e43;
+}
+.button-order:active {
+  background:#503e33;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+
 /*footer*/
-footer {
+.main-footer {
   height:120px;
   display:flex;
   justify-content: space-around;
@@ -199,4 +398,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.footer-transparency{
+  background-color:rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+.footer-copyright b{
+    padding-right:8px;
+}
+.footer-copyright a{
+    height:41px;
+}
+.footer-copyright a:hover{
+
 }
