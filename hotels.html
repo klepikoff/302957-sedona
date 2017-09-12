@@ -28,41 +28,53 @@
           <form method="get" class="filter" action="https://echo.htmlacademy.ru">
             <fieldset>
                 <legend>Инфраструктура:</legend>
-                <ul>
+                <ul  class="filter-options">
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="pool" name="pool" checked>
-                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                       <label for="pool">Бассейн</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="pool">
+                        <div class="checkbox-indicator"></div>
+                        Бассейн
+                      </label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="parking" name="parking">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                      <label for="parking">Парковка</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="parking" disabled>
+                        <div class="checkbox-indicator"></div>
+                        Паркинг
+                      </label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="wifi" type="checkbox" name="wifi">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                      <label for="wifi">Wi-Fi</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="wifi" checked disabled>
+                        <div class="checkbox-indicator"></div>
+                        Wi-Fi
+                      </label>
                     </li>
                 </ul>
             </fieldset>
             <fieldset>
                   <legend>Тип жилья:</legend>
-                  <ul>
+                  <ul class="filter-options">
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="hotel" name="hotel" checked>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                      <label for="hotel">Гостиница</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="hotel">
+                        <div class="checkbox-indicator"></div>
+                        Гостиница
+                      </label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="motel" name="motel" checked>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                      <label for="motel">Мотель</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="motel">
+                        <div class="checkbox-indicator"></div>
+                        Мотель
+                      </label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="apartment" name="apartment" checked>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path  d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                      <label for="apartment">Апартаменты</label>
+                      <label>
+                        <input class="visually-hidden" type="checkbox" name="aparts">
+                        <div class="checkbox-indicator"></div>
+                        Апартаменты
+                      </label>
                     </li>
                   </ul>
             </fieldset>
@@ -88,7 +100,7 @@
           <p class="results-find">Найдено: 3</p>
           <p class="results-sort">Сортировка</p>
           <ul class="results-type">
-              <li class="result-type current"><a href="hotels.html">По цене</a></li>
+              <li class="result-type current"><a  href="hotels.html">По цене</a></li>
               <li class="result-type"><a href="#">По типу</a></li>
               <li class="result-type"><a href="#">По рейтингу</a></li>
           </ul>
