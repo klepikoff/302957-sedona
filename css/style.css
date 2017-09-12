@@ -800,6 +800,7 @@ input[type="checkbox"]:disabled:checked + div{
   width:115px;
   fill: #231f20;
 }
+
 .footer-copyright a:hover{
   fill: #81b3d2;
 }
